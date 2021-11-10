@@ -123,11 +123,12 @@ class PhotosGrid extends StatelessWidget {
     return GridView.count(
       crossAxisCount: 3,
       children: List.generate(
-        10,
+        kImages.length,
         (index) => Container(
-          decoration: BoxDecoration(border: Border.all(color: Colors.white, width: 1)),
+          decoration: BoxDecoration(border: Border.all(color: Colors.white, width: 0.5)),
           child: Image.network(
-            "https://assets2.razerzone.com/images/pnx.assets/a1f5964573ff5aff38ade71ce3a97d22/go-green-hero-mobile-v2.jpg",
+            kImages[index],
+            fit: BoxFit.fitHeight,
           ),
         ),
       ),
