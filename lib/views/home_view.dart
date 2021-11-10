@@ -28,7 +28,20 @@ class HomeView extends StatelessWidget {
           ),
         ],
       ),
-      body: Post(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Post(),
+            Post(),
+            Post(),
+            Post(),
+            Post(),
+            Post(),
+            Post(),
+            Post(),
+          ],
+        ),
+      ),
     );
   }
 }
