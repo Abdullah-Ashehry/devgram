@@ -47,7 +47,7 @@ class ProfileView extends StatelessWidget {
                           image: DecorationImage(
                             fit: BoxFit.contain,
                             image: NetworkImage(
-                              watermelonLink,
+                              watermelonBGLink,
                             ),
                           ),
                         ),
@@ -88,6 +88,20 @@ class ProfileView extends StatelessWidget {
               ],
             ),
           ),
+          Expanded(
+            child: GridView.count(
+              crossAxisCount: 3,
+              children: List.generate(
+                10,
+                (index) => Container(
+                  decoration: BoxDecoration(border: Border.all(color: Colors.white, width: 1)),
+                  child: Image.network(
+                    "https://assets2.razerzone.com/images/pnx.assets/a1f5964573ff5aff38ade71ce3a97d22/go-green-hero-mobile-v2.jpg",
+                  ),
+                ),
+              ),
+            ),
+          )
         ],
       ),
     );
