@@ -23,13 +23,13 @@ class _MainViewState extends State<MainView> {
         currentIndex: currentIndex,
         selectedItemColor: Colors.black,
         items: [
-          BottomNavigationBarItem(icon: SvgPicture.asset(homeSvgAsset), label: 'home'),
+          BottomNavigationBarItem(icon: SvgPicture.asset(kHomeSvgAsset), label: 'Home'),
           BottomNavigationBarItem(
             icon: Image.network(
               "https://firebasestorage.googleapis.com/v0/b/fozan-kh.appspot.com/o/watermelon.png?alt=media&token=0c4c219d-4376-432b-a3b7-598e42803bb9",
               height: 30,
             ),
-            label: 'profile',
+            label: 'Profile',
           ),
         ],
       ),

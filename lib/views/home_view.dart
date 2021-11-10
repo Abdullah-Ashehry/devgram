@@ -14,17 +14,17 @@ class HomeView extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
         centerTitle: false,
-        title: SvgPicture.asset(logoSvgAsset),
+        title: SvgPicture.asset(kLogoSvgAsset),
         actionsIconTheme: IconThemeData(color: Colors.black),
         actions: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 21),
-            child: SvgPicture.asset(addSvgAsset),
+            child: SvgPicture.asset(kAddSvgAsset),
           ),
-          SvgPicture.asset(heartSvgAsset),
+          SvgPicture.asset(kHeartSvgAsset),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 21),
-            child: SvgPicture.asset(messengerSvgAsset),
+            child: SvgPicture.asset(kMessengerSvgAsset),
           ),
         ],
       ),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:instagram_clone/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-
 class Post extends StatelessWidget {
   const Post({
     Key key,
@@ -24,7 +23,7 @@ class Post extends StatelessWidget {
               SizedBox(width: 10),
               Text('Ruffles'),
               Spacer(),
-              SvgPicture.asset(moreSvgAsset),
+              SvgPicture.asset(kMoreSvgAsset),
             ],
           ),
         ),
@@ -38,12 +37,12 @@ class Post extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  SvgPicture.asset(heartSvgAsset),
+                  SvgPicture.asset(kHeartSvgAsset),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: SvgPicture.asset(commentSvgAsset),
+                    child: SvgPicture.asset(kCommentSvgAsset),
                   ),
-                  SvgPicture.asset(shareSvgAsset),
+                  SvgPicture.asset(kShareSvgAsset),
                 ],
               ),
               Padding(
