@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:instagram_clone/constants.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key key}) : super(key: key);
@@ -11,20 +13,17 @@ class HomeView extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
         centerTitle: false,
-        title: Text(
-          'Instagram',
-          style: TextStyle(color: Colors.black),
-        ),
+        title: SvgPicture.asset(logoSvgAsset),
         actionsIconTheme: IconThemeData(color: Colors.black),
         actions: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 21),
-            child: Icon(Icons.add_box_outlined),
+            child: SvgPicture.asset(addSvgAsset),
           ),
-          Icon(Icons.icecream_outlined),
+          SvgPicture.asset(heartSvgAsset),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 21),
-            child: Icon(Icons.message),
+            child: SvgPicture.asset(messengerSvgAsset),
           ),
         ],
       ),
@@ -42,7 +41,7 @@ class HomeView extends StatelessWidget {
                 SizedBox(width: 10),
                 Text('Ruffles'),
                 Spacer(),
-                Icon(Icons.more_horiz)
+                SvgPicture.asset(moreSvgAsset),
               ],
             ),
           ),
@@ -56,12 +55,12 @@ class HomeView extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Icon(Icons.icecream_outlined),
+                    SvgPicture.asset(heartSvgAsset),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                      child: Icon(Icons.chat_bubble_outline),
+                      child: SvgPicture.asset(commentSvgAsset),
                     ),
-                    Icon(Icons.send_rounded),
+                    SvgPicture.asset(shareSvgAsset),
                   ],
                 ),
                 Padding(
